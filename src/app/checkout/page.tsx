@@ -29,10 +29,10 @@ import { orders } from "@/utils/orders";
 import { useState } from "react";
 
 const formSchema = z.object({
-  name: z.string().min(2, "Nome é obrigatório").max(50),
-  phone: z.string().min(2, "Número de celular é obrigatório").max(50),
-  deliver: z.string().min(2, "Forma de entrega é obrigatório").max(50),
-  paymentMethod: z.string().min(2, "Forma de pagamento é obrigatório").max(50),
+  name: z.string().min(2, "Campo obrigatório").max(50),
+  phone: z.string().min(2, "Campo obrigatório").max(50),
+  deliver: z.string().min(2, "Campo obrigatório").max(50),
+  paymentMethod: z.string().min(2, "Campo obrigatório").max(50),
   address: z.string().max(50),
 });
 
