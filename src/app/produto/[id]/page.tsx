@@ -18,7 +18,7 @@ const Product: React.FC<ProductParamsProps> = async ({ params }) => {
   }
 
   return (
-    <div className="flex-grow grid grid-cols-1 sm:grid-cols-2 items-center justify-center gap-4 sm:gap-8 my-8 max-w-[1060px] mx-auto">
+    <div className="px-4 flex-grow grid grid-cols-1 sm:grid-cols-2 items-center justify-center gap-4 sm:gap-8 my-8 max-w-[1060px] mx-auto">
       <ProductImage product={product} />
 
       <ProductInfo product={product} />
