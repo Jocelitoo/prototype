@@ -35,8 +35,6 @@ export const Checkout = () => {
             <p className="text-xl">R$ {subtotal}</p>
           </div>
 
-          <p>Taxas e valor de entrega calculados no checkout</p>
-
           {/* {currentUser ? (
             <Link
               href={"/checkout"}
@@ -60,7 +58,7 @@ export const Checkout = () => {
             Checkout
           </Link>
 
-          <Link href="/products" className="flex items-center hover:underline">
+          <Link href="/" className="flex items-center hover:underline">
             <ArrowLeft size={20} /> Continuar comprando
           </Link>
         </div>
