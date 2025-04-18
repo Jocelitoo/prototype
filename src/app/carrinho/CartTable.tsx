@@ -80,7 +80,6 @@ export const CartTable = () => {
         <TableRow>
           <TableHead>Produto</TableHead>
           <TableHead className="text-center">Preço</TableHead>
-          <TableHead className="text-center">Tamanho</TableHead>
           <TableHead className="text-center">Quantidade</TableHead>
           <TableHead className="text-right">Total</TableHead>
         </TableRow>
