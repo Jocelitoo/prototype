@@ -15,7 +15,7 @@ export const Header = () => {
   );
 
   return (
-    <header className="sticky top-0 left-0 right-0 flex items-center justify-between p-4 bg-slate-100">
+    <header className="sticky top-0 left-0 right-0 z-50 flex items-center justify-between p-4 bg-slate-100">
       <Link href="/">D085 Suplementos</Link>
 
       <Button variant={"outline"} size={"lg"} asChild>
