@@ -153,10 +153,7 @@ export const CartTable = () => {
             <TableCell colSpan={5} className="text-center space-y-4">
               <p className="text-xl">Nenhum produto encontrado</p>
 
-              <Link
-                href="/produtos"
-                className="flex justify-center hover:underline"
-              >
+              <Link href="/" className="flex justify-center hover:underline">
                 <ArrowLeft size={20} /> Ir às compras
               </Link>
             </TableCell>
