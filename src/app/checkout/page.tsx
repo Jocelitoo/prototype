@@ -96,7 +96,7 @@ Total: ${subtotal}`;
     // console.log(message);
 
     location.assign(
-      `https://api.whatsapp.com/send?phone=${5585985055532}&text=${encodeURIComponent(
+      `https://web.whatsapp.com/send?phone=${5585985055532}&text=${encodeURIComponent(
         message
       )}`
     );
