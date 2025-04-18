@@ -39,6 +39,7 @@ const formSchema = z.object({
 const Checkout = () => {
   const { cartProducts } = useCartContext();
   const [deliver, setDeliver] = useState("");
+  const isMobile = /Android|iPhone|iPad|iPod/.test(navigator.userAgent); // Verificar se o usuário está acessando no desktop ou celular
 
   const subtotal = cartProducts
     .reduce((acc, product) => (acc += product.price * product.quantity), 0)
@@ -96,7 +97,9 @@ Total: ${subtotal}`;
     // console.log(message);
 
     location.assign(
-      `https://web.whatsapp.com/send?phone=${5585985055532}&text=${encodeURIComponent(
+      `https://${
+        isMobile ? "api" : "web"
+      }.whatsapp.com/send?phone=${5585985055532}&text=${encodeURIComponent(
         message
       )}`
     );
